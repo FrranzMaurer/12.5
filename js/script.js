@@ -23,7 +23,7 @@ function createTweet(input) {
     }
 
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
-    
+
     if (tweetText.length > 140) {
     getQuote();
 	} else {
@@ -32,10 +32,11 @@ function createTweet(input) {
 	    document.querySelector('.author').innerText = "Author: " + quoteAuthor;
 	    document.querySelector('.tweet').setAttribute('href', tweet);
 	}
+	document.querySelector('.tweet').setAttribute('href', tweet);
 }
 
 
-document.querySelector('.tweet').setAttribute('href', tweet);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     getQuote();
